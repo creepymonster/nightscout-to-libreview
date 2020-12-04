@@ -1,4 +1,4 @@
-# nightscout-to-libreview
+# Transfer Nightscout data to LibreView
 Transfer your diabetes data from Nightscout to LibreView.
 
 ## Requirements
@@ -24,3 +24,6 @@ mpm start
 ```
 
 ## Todo
+- many many testing
+- clean up
+- add missing data options
