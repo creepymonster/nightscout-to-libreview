@@ -25,5 +25,5 @@ mpm start
 
 ## Todo
 - many many testing
-- clean up
+- clean up (index.js, ...)
 - add missing data options
