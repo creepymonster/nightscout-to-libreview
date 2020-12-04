@@ -1,0 +1,19 @@
+{
+  "name": "nightscout-to-libreview",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "author": "Reimar Metzen",
+  "dependencies": {
+    "array-smooth": "^1.0.0",
+    "axios": "^0.21.0",
+    "colors": "^1.4.0",
+    "dayjs": "^1.9.6",
+    "dotenv": "^8.2.0",
+    "prompt": "^1.0.0",
+    "uuid": "^8.3.1"
+  }
+}
