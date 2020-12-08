@@ -26,6 +26,7 @@ npm start
 ## Todo
 - many many testing!
 - better error handling
+- clean up entry point
 - clean up user input
 - add frequent unscheduledContinuousGlucoseEntries
 - add notes from libreview
