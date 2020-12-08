@@ -24,6 +24,10 @@ npm start
 ```
 
 ## Todo
-- many many testing
-- clean up (index.js, ...)
-- add missing data options
+- many many testing!
+- better error handling
+- clean up user input
+- add frequent unscheduledContinuousGlucoseEntries
+- add notes from libreview
+- add basal insulin?!?
+- different libreview api endpoints
