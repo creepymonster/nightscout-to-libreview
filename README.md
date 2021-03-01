@@ -12,7 +12,7 @@ Open command line in your favorite folder:
 git clone https://github.com/creepymonster/nightscout-to-libreview
 cd nightscout-to-libreview
 npm install
-mpm start
+npm start
 ```
 
 ## Future use
@@ -20,10 +20,15 @@ mpm start
 Open command line in your favorite folder:
 ```
 cd nightscout-to-libreview
-mpm start
+npm start
 ```
 
 ## Todo
-- many many testing
-- clean up (index.js, ...)
-- add missing data options
+- many many testing!
+- better error handling
+- clean up entry point
+- clean up user input
+- add frequent unscheduledContinuousGlucoseEntries
+- add notes from libreview
+- add basal insulin?!?
+- different libreview api endpoints
