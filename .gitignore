@@ -1,0 +1,6 @@
+# ignore folders
+node_modules
+samples
+
+# ignore config
+config.json
