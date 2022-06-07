@@ -83,7 +83,7 @@ prompt.get([{
     const insulinEntries = await nightscout.getNightscoutInsulinEntries(config.nightscoutUrl, config.nightscoutToken, fromDate, toDate);
 
     if (glucoseEntries.length > 0 || foodEntries.length > 0 || insulinEntries.length > 0) {
-      const auth = await libre.authLibreView(config.libreUsername, config.librePassword, config.libreDevice);
+      const auth = await libre.authLibreView(config.libreUsername, config.librePassword, config.libreDevice, result.libreResetDevice);
       if (!!!auth) {
         console.log('libre auth failed!'.red);
 

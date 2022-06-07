@@ -1,5 +1,4 @@
 const axios = require('axios');
-// const smooth = require('array-smooth');
 const dayjs = require('dayjs');
 const colors = require('colors');
 
@@ -73,7 +72,7 @@ const getNightscoutGlucoseEntries = async function (baseUrl, token, fromDate, to
     }
   });
 
-  const data = response.data.filter(function(value, index, Arr) {
+  const data = response.data.filter(function (value, index, Arr) {
     return index % 3 == 0;
   }).map(d => {
     return {
@@ -111,7 +110,7 @@ const getNightscoutInsulinEntries = async function (baseUrl, token, fromDate, to
       'Content-Type': 'application/json'
     }
   });
- 
+
   const data1 = response1.data.map(d => {
     return {
       id: parseInt(`4${dayjs(d['created_at']).format('YYYYMMDDHHmmss')}`),
