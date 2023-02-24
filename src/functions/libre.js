@@ -35,6 +35,7 @@ const transferLibreView = async function (device, token, glucoseEntries, foodEnt
   console.log('food entries', (foodEntries || []).length.toString().gray);
   console.log('insulin entries', (insulinEntries || []).length.toString().gray);
 
+  const nth = 48;
   const data = {
     UserToken: token,
     GatewayType: "FSLibreLink.iOS",
@@ -72,7 +73,7 @@ const transferLibreView = async function (device, token, glucoseEntries, foodEnt
         scheduledContinuousGlucoseEntries: glucoseEntries || [],
         insulinEntries: insulinEntries || [],
         foodEntries: foodEntries || [],
-        unscheduledContinuousGlucoseEntries: []
+        unscheduledContinuousGlucoseEntries: (glucoseEntries || []).filter((e, i) => i % nth === nth - 1)
       }
     },
     Domain: "Libreview"
