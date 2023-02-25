@@ -72,9 +72,7 @@ const getNightscoutGlucoseEntries = async function (baseUrl, token, fromDate, to
     }
   });
 
-  const data = response.data.filter(function (value, index, Arr) {
-    return index % 3 == 0;
-  }).map(d => {
+  const data = response.data.filter((value, index, Arr) => index % 3 == 0).map(d => {
     return {
       id: parseInt(`1${dayjs(d.dateString).format('YYYYMMDDHHmmss')}`),
       sysTime: d.sysTime,
